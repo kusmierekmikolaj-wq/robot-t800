@@ -77,7 +77,7 @@ W kodzie każdy podzespół to parametr (długość, szerokość, wysokość, pu
 
 ## 6. Jak będę to weryfikować (bez drukarki)
 
-Kod: `robot/cad/` (parametry w `params.py`, jeden plik na moduł, `assemble.py` składa całość). Automatyczne kontrole, uruchamiane testami:
+Kod: `robot/cad/`. Pierwsza wersja czaszki z prostych brył (CadQuery) została usunięta 2026-10-10 (jest w historii Git, commit e514dbd); bazą jest teraz model z `cad/t800/`. Automatyczne kontrole, uruchamiane testami:
 1. Każdy STL jest szczelny, ma objętość większą od zera, a bbox nie przekracza 220 mm.
 2. **Brak niezamierzonych kolizji** w złożeniu (przecięcia brył CadQuery poza wyznaczonymi stykami).
 3. **Brak kolizji w pełnym zakresie ruchu**: obracam model w krokach przez pan -90..90 i tilt -30..40 i sprawdzam przecięcia.
