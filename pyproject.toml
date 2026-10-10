@@ -1,0 +1,14 @@
+[project]
+name = "robot-brain"
+version = "0.1.0"
+description = "Humanoidalny robot (styl T-800) z Claude jako mózgiem: etap 0"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+api = ["anthropic"]
+sim = ["mujoco", "numpy"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["brain", "sim"]

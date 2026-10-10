@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Blender: automatyczne kopie zapasowe
+*.blend1
+*.blend2
+
+# Pliki robocze CAD (do odtworzenia skryptami)
+cad/out/_tmp/
+cad/ref/zlozona/_tmp_*
+cad/ref/zlozona/_ori*
+
+# Sekrety
+.env
+*.key

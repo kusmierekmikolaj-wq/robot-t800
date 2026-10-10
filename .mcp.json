@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "blender": {
+      "command": "C:\\Users\\Jeff\\blender3d\\venv\\Scripts\\mcp-for-blender.exe",
+      "args": [],
+      "env": {
+        "BLENDER_HOST": "localhost",
+        "BLENDER_PORT": "9876",
+        "DISABLE_TELEMETRY": "true",
+        "BLENDER_MCP_DISABLE_TELEMETRY": "true",
+        "MCP_DISABLE_TELEMETRY": "true"
+      }
+    },
+    "freecad": {
+      "command": "C:\\Users\\Jeff\\freecad3d\\venv\\Scripts\\freecad-mcp.exe",
+      "args": []
+    }
+  }
+}
