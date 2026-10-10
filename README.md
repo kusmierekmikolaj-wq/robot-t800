@@ -1,6 +1,13 @@
 # Robot (styl T-800) z Claude jako mózgiem
 
-Etap 0, dzień 1: **wirtualny robot (głowa) + pętla Claude z narzędziami + nadzorca bezpieczeństwa**, bez sprzętu.
+<p align="center"><img src="cad/t800/blender_demo/oczy_34.png" width="420" alt="Render głowy T-800 ze świecącymi oczami"></p>
+
+**EN:** A T-800 style robot head with Claude as its brain. Every motor command goes through a safety supervisor
+(joint limits, max step, e-stop that only a human can release). Runs today against a MuJoCo simulation; next step is
+a camera + mic + speaker board (ESP32-S3) talking to a voice/vision server on the PC, then a 3D-printed skull.
+Code and docs are in Polish.
+
+**PL:** Etap 0, dzień 1: **wirtualny robot (głowa) + pętla Claude z narzędziami + nadzorca bezpieczeństwa**, bez sprzętu.
 Pełny plan: `docs/PLAN_BUDOWY.md`. Narzędzia i wtyczki: `docs/NARZEDZIA.md`.
 
 ## Uruchomienie
@@ -41,7 +48,13 @@ docs/        plan budowy i lista narzędzi
 
 ## Dalsze kroki (z planu)
 
-1. Prawdziwy klucz API i test rozmowy.
-2. Dodanie STT/TTS i opisu sceny z kamery.
-3. Klasa `PiRobot(RobotInterface)` dla Raspberry Pi 5 i serw pan/tilt (po dojściu sprzętu i drukarki).
-4. Obudowa czaszki T-800 jako parametryczny model CadQuery w `cad/`.
+1. ~~Prawdziwy klucz API i test rozmowy~~ (gotowe: `claude-haiku-5-5` przechodzi 10 scenariuszy bezpieczeństwa).
+2. Serwer na PC: rozpoznawanie mowy, synteza mowy i opis sceny z kamery, testowany najpierw na kamerce i mikrofonie PC.
+3. Płytka DFRobot ESP32-S3 AI Camera (DFR1154) w głowie jako oczy, uszy i głośnik.
+4. Wydruk czaszki T-800 (model z MakerWorld, skala 115%) i ruch szyi w kolejnych etapach.
+
+## Licencja
+
+Kod i dokumentacja: MIT (plik `LICENSE`). Geometria czaszki **nie jest w repozytorium**: to model
+"T-800 Head for a1mini" (BumblebeeGTR, remiks modelu senfsaft) na licencji CC BY-NC-SA, pobierany z MakerWorld
+(szczegóły i linki: `cad/t800/README.md`). Rendery tego modelu udostępniam na tej samej licencji CC BY-NC-SA.
