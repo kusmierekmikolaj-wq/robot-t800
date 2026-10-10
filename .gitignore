@@ -16,3 +16,10 @@ cad/ref/zlozona/_ori*
 # Sekrety
 .env
 *.key
+
+# Geometria czaszki: model z MakerWorld (CC BY-NC-SA) i pliki pochodne, nie publikujemy
+cad/ref/
+*.stl
+*.step
+*.blend
+
