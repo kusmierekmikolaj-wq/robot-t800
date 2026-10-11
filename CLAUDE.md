@@ -32,4 +32,5 @@ Głowa (a później cały robot) w stylu T-800 z Claude jako mózgiem. Plan: `do
 
 - Narzędzia mózgu zawsze przez nadzorcę bezpieczeństwa (skill `robot-brain-safety`). E-stop odblokowuje tylko człowiek.
 - Części 3D: skill `fdm-cad-design`. Symulacja: skill `mujoco-sim`.
-- Repozytorium Git jest lokalne (bez zdalnego). Po zakończonym kroku: testy, potem commit z krótkim opisem po polsku.
+- Repozytorium jest **publiczne**: github.com/kusmierekmikolaj-wq/robot-t800 (remote `origin`, gałąź `main`). Nigdy nie commituj geometrii czaszki (`cad/ref/`, `*.stl`, `*.step`, `*.blend`: licencja CC BY-NC-SA, jest w `.gitignore`), kluczy API ani danych osobistych. Tożsamość git: adres noreply GitHuba (`299278702+kusmierekmikolaj-wq@users.noreply.github.com`), nie gmail.
+- Po zakończonym kroku: testy, commit z krótkim opisem po polsku, `git push`.
